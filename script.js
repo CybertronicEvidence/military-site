@@ -4,9 +4,8 @@ let i = 0;
 let image = []
 let time = 5000
 
-image[0] = './img/2c2c593f-dbf9-4ba0-9994-45794924924f.jpeg'
-image[1] = './img/307c8564-8512-45fa-a8c5-acab0f6a5c76.jpeg'
-image[2] = './img/a0e33c37-359d-4ff5-b951-99c6392cf6ba.jpeg'
+image[0] = './img/IMG_20230729_204507_183.jpg'
+image[1] = './img/IMG_20230729_204507_336.jpg'
 
 let slide = document.querySelector('.banner')
 // slide.img.setAttribute('src', 'image[]')

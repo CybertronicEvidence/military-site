@@ -309,10 +309,6 @@ ul {
   }
   .row {
     text-align: center;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
   }
   .fa-brands {
     padding-right: 100px;

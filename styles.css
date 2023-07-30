@@ -4,9 +4,10 @@
   font-family: "Mulish", sans-serif;
 }
 
-/* body {
-  background-color: #4b5320;
-} */
+body {
+  background-color: #111;
+  color: #fff;
+}
 .header {
   width: 100%;
 }
@@ -126,7 +127,7 @@ nav {
   margin: 0 auto 80px;
   position: relative;
   line-height: 60px;
-  color: #333;
+  color: #fff;
 }
 .title::after {
   content: "";
@@ -302,10 +303,11 @@ ul {
 
 @media only screen and (max-width: 800px) {
   .container {
-    max-width: 800px;
+    max-width: 100%;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    width: clamp(200px, 40%, 400px);
   }
   nav ul {
     position: absolute;
@@ -340,7 +342,7 @@ ul {
 
 @media only screen and (max-width: 600px) {
   .container {
-    max-width: 600px;
+    max-width: 100%;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;

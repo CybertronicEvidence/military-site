@@ -1,49 +1,54 @@
-// Slideshow
+AOS.init({
+    "duration": 1000,
+    disable: window.innerWidth < 450
+});
 
-let i = 0;
-let image = []
-let time = 5000
+// // Slideshow
 
-image[0] = './img/IMG_20230729_204507_183.jpg'
-image[1] = './img/IMG_20230729_204507_336.jpg'
+// let i = 0;
+// let image = []
+// let time = 5000
 
-let slide = document.querySelector('.banner')
-// slide.img.setAttribute('src', 'image[]')
-// slide.innerHTML = `<img src='./img/cat-1.jpg'> `
+// image[0] = './img/IMG_20230729_204507_183.jpg'
+// image[1] = './img/IMG_20230729_204507_336.jpg'
 
-function changeImg() {
-    // slide.slides.src = image[i]
-    slide.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image[i]})`
+// let slide = document.querySelector('.banner')
+// // slide.img.setAttribute('src', 'image[]')
+// // slide.innerHTML = `<img src='./img/cat-1.jpg'> `
 
-    if (i < image.length - 1) {
-        i++
-    } else {
-        i = 0
+// function changeImg() {
+//     // slide.slides.src = image[i]
+//     slide.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${image[i]})`
+
+//     if (i < image.length - 1) {
+//         i++
+//     } else {
+//         i = 0
+//     }
+
+//     setTimeout('changeImg()', time);
+// }
+
+// window.onload = changeImg
+
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+    let reveal = document.querySelector('.reveal')
+
+    for (let i = 0; i < reveal.length; i++) {
+        let windowHeight = window.innerHeight;
+        let revealTop = reveal[i].getBoundingClientRect().top;
+        let revealPoint = 150;
+
+        if (revealTop < windowHeight - revealPoint) {
+            reveal[i].classList.add('active');
+        } else {
+            reveal[i].classList.remove('active')
+        }
     }
-
-    setTimeout('changeImg()', time);
 }
 
-window.onload = changeImg
-
-// Product Slide
-
-const productContainers = [...document.querySelectorAll('.product-container')];
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
-
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
-
-    nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-    })
-
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-    })
-})
 
 // Mobile Menu
 

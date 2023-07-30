@@ -320,4 +320,9 @@ ul {
   .fa-bars {
     visibility: visible;
   }
+  .col-1,
+  .col-2,
+  .col-3 {
+    flex-basis: 100%;
+  }
 }

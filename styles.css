@@ -401,6 +401,10 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
+  .content-head {
+    margin-top: 100px;
+    text-align: center;
+  }
   .row {
     text-align: center;
     display: flex;

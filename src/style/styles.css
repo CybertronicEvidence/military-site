@@ -235,9 +235,6 @@ nav {
 .icons {
   width: 20px;
 }
-.small {
-  font-size: 18px;
-}
 
 /* .footer h3 {
   color: #fff;
@@ -385,7 +382,7 @@ ul {
     width: 100px;
   }
   #small {
-    font-size: 16px;
+    font-size: 14px;
   }
   .copy {
     padding: 0;

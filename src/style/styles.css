@@ -365,7 +365,7 @@ ul {
     /* margin: ; */
     font-size: 18px;
     text-align: center;
-    /* line-height: 10px; */
+    line-height: 0px;
     /* width: 100%; */
   }
   .col-1 img,

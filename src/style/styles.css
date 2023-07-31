@@ -302,6 +302,7 @@ ul {
 
   .content {
     position: relative;
+    display: block;
     top: -65%;
     /* bottom: 0; */
   }
@@ -350,7 +351,7 @@ ul {
   }
   .row {
     text-align: center;
-    flex-shrink: 50%;
+    /* flex-shrink: 50%; */
   }
   .col-1,
   .col-2 {
@@ -365,7 +366,7 @@ ul {
     /* margin: ; */
     font-size: 18px;
     text-align: center;
-    line-height: 0px;
+    line-height: normal;
     /* width: 100%; */
   }
   .col-1 img,

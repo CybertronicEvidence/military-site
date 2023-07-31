@@ -336,10 +336,10 @@ ul {
   }
   .col-1 p,
   .col-2 p {
-    padding: 0;
-    margin: 0;
+    padding: 0 100px;
+    /* margin: ; */
     font-size: 18px;
-    text-align: justify;
+    text-align: center;
     /* line-height: 10px; */
     /* width: 100%; */
   }

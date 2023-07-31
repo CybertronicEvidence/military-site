@@ -235,6 +235,9 @@ nav {
 .icons {
   width: 20px;
 }
+.small {
+  font-size: 18px;
+}
 
 /* .footer h3 {
   color: #fff;
@@ -300,12 +303,14 @@ ul {
     overflow-x: hidden;
   }
 
-  .content {
+  /* .content {
     position: relative;
     display: block;
     top: -65%;
-    /* bottom: 0; */
-  }
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+  } */
   #MenuItems {
     position: absolute;
     top: 70px;

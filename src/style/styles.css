@@ -291,6 +291,20 @@ ul {
 /* ------ Mobile View ------ */
 
 @media only screen and (max-width: 800px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .content {
+    position: relative;
+    top: -65%;
+    /* bottom: 0; */
+  }
   #MenuItems {
     position: absolute;
     top: 70px;
@@ -323,14 +337,14 @@ ul {
 } */
 
 @media only screen and (max-width: 600px) {
-  html,
+  /* html,
   body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-  }
+  } */
   .logo {
     transform: scale(0.7);
   }

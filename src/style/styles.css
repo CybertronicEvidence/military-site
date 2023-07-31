@@ -61,7 +61,7 @@ nav {
   padding: 50px;
 }
 .content h1 {
-  font-size: 50px;
+  font-size: 30px;
   margin-top: 80px;
 }
 .content p {
@@ -88,7 +88,7 @@ nav {
 }
 .col-1 {
   flex-basis: 50%;
-  /* min-width: 500px; */
+  min-width: 500px;
 }
 
 .col-1 img {
@@ -300,30 +300,6 @@ ul {
     overflow: hidden;
     transition: max-height 0.5s ease 0s;
   }
-
-  /* .content-head {
-    margin-top: 100px;
-    text-align: center;
-  } */
-  /* .fa-bars {
-    display: block;
-    cursor: pointer;
-    visibility: visible;
-    flex-direction: column;
-    justify-content: space-around;
-  } */
-  .fa-cart-shopping {
-    visibility: hidden;
-  }
-  /* nav ul{
-    position: absolute;        
-    top: 70px;
-    left: 0;
-    background: #333;
-    width: 100%;
-    overflow: hidden;
-    transition: max-height 0.5s;
-  } */
   nav ul li {
     display: block;
     margin-right: 50px;
@@ -333,26 +309,64 @@ ul {
   nav ul li a {
     color: #fff;
   }
-  /* .sec important {
-    text-align: left;
-  } */
-}
-
-@media only screen and (max-width: 800px) {
   .menu-icon {
     display: block;
     cursor: pointer;
   }
 }
 
+/* @media only screen and (max-width: 800px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+} */
+
 @media only screen and (max-width: 600px) {
+  .logo {
+    transform: scale(0.7);
+  }
   .row {
     text-align: center;
   }
   .col-1,
   .col-2,
   .col-3 {
-    flex-basis: 100%;
+    flex-basis: 50%;
+  }
+  .col-1 p,
+  .col-2 p {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    text-align: justify;
+    /* line-height: 10px; */
+    /* width: 100%; */
+  }
+  .col-1 img,
+  .col-2 img {
+    width: 50%;
+  }
+  .single-product .row {
+    text-align: left;
+  }
+  .col-5 img {
+    width: 100px;
+  }
+  .copy {
+    padding: 0;
+  }
+  /* .row {
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  } */
+  .fa-brands {
+    padding-right: 100px;
+  }
+  .fa-bars {
+    visibility: visible;
   }
 }

@@ -323,14 +323,25 @@ ul {
 } */
 
 @media only screen and (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
   .logo {
     transform: scale(0.7);
   }
   .row {
     text-align: center;
+    flex-shrink: 50%;
   }
   .col-1,
-  .col-2,
+  .col-2 {
+    flex-basis: 100%;
+  }
   .col-3 {
     flex-basis: 50%;
   }
@@ -352,6 +363,9 @@ ul {
   }
   .col-5 img {
     width: 100px;
+  }
+  #small {
+    font-size: 16px;
   }
   .copy {
     padding: 0;
